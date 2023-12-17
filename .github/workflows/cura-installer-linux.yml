@@ -85,11 +85,14 @@ jobs:
           cd runner_scripts
           curl -O https://raw.githubusercontent.com/Ultimaker/cura-workflows/main/runner_scripts/ubuntu_setup.sh
           chmod +x ubuntu_setup.sh
-          source ./ubuntu_setup.sh
+          echo skipping ubuntu setup
+          #source ./ubuntu_setup.sh
           
           curl -O https://raw.githubusercontent.com/Ultimaker/cura-workflows/main/runner_scripts/appimage_setup.sh
           cd ..
+          echo appimage setup
           source ./runner_scripts/appimage_setup.sh
+          echo appimage setup done
 
       - name: Setup pipeline caches
         run: |
