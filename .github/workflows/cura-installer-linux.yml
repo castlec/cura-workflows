@@ -85,7 +85,7 @@ jobs:
           cd runner_scripts
           curl -O https://raw.githubusercontent.com/Ultimaker/cura-workflows/main/runner_scripts/ubuntu_setup.sh
           chmod +x ubuntu_setup.sh
-          sudo ./ubuntu_setup.sh
+          ./ubuntu_setup.sh
           
           curl -O https://raw.githubusercontent.com/Ultimaker/cura-workflows/main/runner_scripts/appimage_setup.sh
           cd ..
