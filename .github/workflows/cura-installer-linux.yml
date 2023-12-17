@@ -88,7 +88,7 @@ jobs:
           2> echo skipping ubuntu setup
           #source ./ubuntu_setup.sh
           
-          curl -O https://raw.githubusercontent.com/Ultimaker/cura-workflows/main/runner_scripts/appimage_setup.sh
+          curl -O https://raw.githubusercontent.com/castlec/cura-workflows/main/runner_scripts/appimage_setup.sh
           cd ..
           2> echo appimage setup
           source ./runner_scripts/appimage_setup.sh
