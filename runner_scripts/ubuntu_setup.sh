@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo ${DEBIAN_FRONTEND} > /dev/stderr
 add-apt-repository ppa:ubuntu-toolchain-r/test -y
 apt update -y
 apt upgrade
