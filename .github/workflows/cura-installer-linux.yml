@@ -79,7 +79,7 @@ jobs:
       - name: Install Python requirements and Create default Conan profile
         run: pip install -r .github/workflows/requirements-runner.txt
 
-      - name: Install Linux system requirements for building
+      - name: Install Linux system requirements for building - castle
         run: |
           mkdir runner_scripts
           cd runner_scripts
