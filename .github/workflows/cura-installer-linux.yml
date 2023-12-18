@@ -132,6 +132,7 @@ jobs:
         run: pyinstaller ./cura_inst/UltiMaker-Cura.spec
 
       - name: Setup Sentry CLI
+        if: ${{ !env.ACT }}
         uses: mathieu-bour/setup-sentry-cli@v1
         with:
           version: latest
@@ -140,6 +141,7 @@ jobs:
           project: curaengine
 
       - name: Upload the debug symbols
+        if: ${{ !env.ACT }}
         run: |
           sentry-cli debug-files upload UltiMaker-Cura/CuraEngine
           sentry-cli debug-files upload UltiMaker-Cura/libArcus.*
