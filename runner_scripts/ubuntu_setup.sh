@@ -6,5 +6,6 @@ apt install build-essential checkinstall libegl-dev zlib1g-dev libssl-dev ninja-
 
 apt install g++-13 gcc-13 -y
 apt install -y gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
+apt install libpython3.10 -y
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13
 update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 13
